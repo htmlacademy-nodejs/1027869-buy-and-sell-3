@@ -1,0 +1,24 @@
+{
+  "name": "buy-and-sell",
+  "version": "1.0.0",
+  "description": " Куплю, продам",
+  "main": "./src/service/service.js",
+  "scripts": {
+    "test": "npm run eslint",
+    "eslint": "eslint --ext .js src/",
+    "start": "node ./src/service/service.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeytalyzin/1027869-buy-and-sell-3.git"
+  },
+  "author": "talyzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeytalyzin/1027869-buy-and-sell-3/issues"
+  },
+  "homepage": "https://github.com/sergeytalyzin/1027869-buy-and-sell-3#readme",
+  "devDependencies": {
+    "eslint": "7.12.1"
+  }
+}
