@@ -5,7 +5,7 @@
   "main": "./src/service/service.js",
   "scripts": {
     "test": "npm run eslint",
-    "eslint": "eslint --ext .js src/",
+    "eslint": "eslint --fix --ext .js src/",
     "start": "node ./src/service/service.js"
   },
   "repository": {
@@ -21,5 +21,8 @@
   "devDependencies": {
     "eslint": "7.12.1",
     "eslint-config-htmlacademy": "0.6.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
   }
 }
