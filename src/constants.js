@@ -9,7 +9,13 @@ const ExitCode = {
   error: 1,
   success: 0,
 };
-
+const HttpCode = {
+  OK: 200,
+  NOT_FOUND: 404,
+  INTERNAL_SERVER_ERROR: 500,
+  FORBIDDEN: 403,
+  UNAUTHORIZED: 401,
+};
 
 const OfferType = {
   OFFER: `offer`,
@@ -31,6 +37,7 @@ const Picture = [
   `image11.jpg`, `image12.jpg`, `image13.jpg`, `image14.jpg`, `image15.jpg`, `image16.jpg`];
 
 module.exports = {
+  HttpCode,
   SumRestrict,
   PictureRestrict,
   Picture,
