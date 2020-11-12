@@ -39,7 +39,7 @@ module.exports = {
     const [count] = args;
 
     const countOffer = Number.parseInt(count, 10) || DEFAULT_COUNT;
-    const options = [countOffer, titles, categories, sentences]
+    const options = [countOffer, titles, categories, sentences];
     const content = JSON.stringify(generateOffers(...options));
     try {
       await fs.writeFile(FILE_NAME, content);
