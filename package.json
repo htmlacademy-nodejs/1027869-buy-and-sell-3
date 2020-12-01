@@ -4,7 +4,8 @@
   "description": " Куплю, продам",
   "main": "./src/service/service.js",
   "scripts": {
-    "test": "npm run eslint",
+    "test": "npm run eslint && npm run jest",
+    "jest": "jest",
     "eslint": "eslint --fix --ext .js src/",
     "dev": "nodemon src/service/service.js",
     "start": "node ./src/service/service.js",
@@ -23,9 +24,13 @@
   "devDependencies": {
     "eslint": "7.12.1",
     "eslint-config-htmlacademy": "0.6.0",
-    "nodemon": "^2.0.6"
+    "jest": "26.6.3",
+    "nodemon": "^2.0.6",
+    "supertest": "6.0.1"
   },
   "dependencies": {
+    "@types/jest": "^26.0.15",
+    "babel-jest": "^26.6.3",
     "chalk": "^4.1.0",
     "express": "^4.17.1",
     "nanoid": "3.1.18",
