@@ -18,7 +18,6 @@ const app = new Router();
 
 (async () => {
   const mockData = await getMockData();
-  console.log(mockData);
   category(app, new CategoryService(mockData));
   search(app, new SearchService(mockData));
   offer(app, new OfferService(mockData), new CommentService());
