@@ -11,6 +11,12 @@ const ExitCode = {
   error: 1,
   success: 0,
 };
+
+const Env = {
+  DEVELOPMENT: `development`,
+  PRODUCTION: `production`
+};
+
 const HttpCode = {
   OK: 200,
   CREATED: 201,
@@ -53,5 +59,6 @@ module.exports = {
   DEFAULT_COMMAND,
   USER_ARGV_INDEX,
   ExitCode,
-  API_PREFIX
+  API_PREFIX,
+  Env
 };
