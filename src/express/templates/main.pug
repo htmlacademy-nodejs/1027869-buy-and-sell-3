@@ -2,27 +2,29 @@ extends layout.pug
 
 block content
   main.page-content
-    //include partials/categories.pug
+    include partials/categories.pug
     section.tickets-list
       h2.visually-hidden Самые новые предложения
       .tickets-list__wrapper
         .tickets-list__header
           p.tickets-list__title Самое свежее
         ul
-           //- each offer in offers
+          each offer in offers
             li.tickets-list__item
-              .ticket-card.ticket-card--color01
+              +ticketCard()
                 .ticket-card__img
                   img(src=`/img/${offer.picture}` alt=offer.title)
                 .ticket-card__info
                   +ticketLabel(offer.type)
                   .ticket-card__categories
-                    a(href="#") #{offer.category}
+                    each category in offer.categories
+                      a(href="#") #{category.name}
                   .ticket-card__header
                     h3.ticket-card__title
-                      a(href="#") #{offer.title}
+                      a(href=`offers/${offer.id}`) #{offer.title}
                     p.ticket-card__price
                       span.js-sum #{offer.sum}
                       |  ₽
                   .ticket-card__desc
                     p #{offer.description}
+  +pagination(page, totalPages, 2, `?`)

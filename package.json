@@ -34,14 +34,15 @@
     "babel-jest": "26.6.3"
   },
   "dependencies": {
-    "sequelize": "6.3.5",
-    "dotenv": "8.2.0",
     "axios": "0.20.0",
     "chalk": "4.1.0",
     "cross-env": "7.0.3",
+    "dotenv": "8.2.0",
     "express": "4.17.1",
+    "multer": "1.4.2",
     "nanoid": "3.1.18",
     "pino": "6.6.0",
-    "pug": "3.0.0"
+    "pug": "3.0.0",
+    "sequelize": "6.3.5"
   }
 }
